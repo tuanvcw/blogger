@@ -2,7 +2,11 @@
 <p><%= @articles.body %></p>
 </br>
 <%= link_to "Edit", edit_article_path %>
-</br>
 <%= link_to "Delete", article_path, method: :delete %>
+</br>
+<h2>Comments</h2>
+<%= render partial: 'articles/comment', collection: @articles.comments.reverse %>
+<%= render partial: 'comments/form' %>
+</br>
 </br>
 <%= link_to "<<Go back to list of all Articles", articles_path %>
