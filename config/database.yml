@@ -13,7 +13,7 @@ development:
   <<: *default
   database: blogger_dev
   host: localhost
-  username: tuanvc
+  username: postgres
   password: linhtinh
 
 # Warning: The database defined as "test" will be erased and
